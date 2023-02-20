@@ -33,7 +33,7 @@ const Certificate = () => {
             console.log(error);
             setError(true);
         }
-    })
+    },[])
     return (
         <>
             {error ? <h1>Certificate Not found</h1> : <img src={certPath } alt="" style={{width:"100vw",height:"100vh",objectFit:"contain"}} />}
